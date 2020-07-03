@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* *sidebar */
+#sidebar {
+  height: 100%;
+}
+
+#sidebar footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  background-color: transparent;
+}
