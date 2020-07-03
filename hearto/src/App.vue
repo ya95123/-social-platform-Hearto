@@ -11,10 +11,13 @@
       app
       overflow
     >
-    <v-footer
-    >
-      <span class="px-4">&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <!-- Logo -->
+      <v-img :aspect-ratio="16/9" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-img>
+
+    <!-- footer -->
+      <v-footer>
+        <span class="px-4">&copy; {{ new Date().getFullYear() }}</span>
+      </v-footer>
     </v-navigation-drawer>
 
     <!-- elevationc海拔(深度)、dense稠密(高度變小) -->
