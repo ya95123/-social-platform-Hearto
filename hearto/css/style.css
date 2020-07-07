@@ -1,6 +1,8 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto','微軟正黑體','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html, body {
