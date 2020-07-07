@@ -1,26 +1,6 @@
 <template>
   <v-app id="app">
-    <!-- sidebar -->
-    <v-navigation-drawer id="sidebar"
-      v-model="primaryDrawer.model"
-      :clipped="primaryDrawer.clipped"
-      :floating="primaryDrawer.floating"
-      :fixed="primaryDrawer.fixed"
-      permanent
-      color="purple"
-      app
-      overflow
-    >
-    <!-- Logo -->
-      <v-img :aspect-ratio="16/9" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-img>
-
-    <!-- footer -->
-      <v-footer>
-        <span class="px-4">&copy; {{ new Date().getFullYear() }}</span>
-      </v-footer>
-    </v-navigation-drawer>
-
-    <!-- elevationc海拔(深度)、dense稠密(高度變小) -->
+    <!-- top----------------------------------- -->
     <v-app-bar id="top"
       :clipped-left="primaryDrawer.clipped"
       :fixed="primaryDrawer.fixed"
@@ -32,6 +12,24 @@
     <!-- 這裡之後要放 button -->
     </v-app-bar>
 
+    <!-- sidebar-------------------------------- -->
+    <v-navigation-drawer id="sidebar"
+      class="primary"
+      v-model="primaryDrawer.model"
+      :clipped="primaryDrawer.clipped"
+      :floating="primaryDrawer.floating"
+      :fixed="primaryDrawer.fixed"
+      permanent
+      app
+      overflow
+    >
+      <!-- Logo -->
+      <v-img :aspect-ratio="16/9" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-img>
+      <!-- footer -->
+      <v-footer class="d-block">
+        <div class="px-4 warning--text text-center overline">交心 Hearto &copy; {{ new Date().getFullYear() }}</div>
+      </v-footer>
+    </v-navigation-drawer>
   </v-app>
 </template>
 
@@ -39,6 +37,7 @@
 export default {
   name: 'App',
   data: () => ({
+    // 側邊欄設定
     primaryDrawer: {
       model: null,
       clipped: false,
