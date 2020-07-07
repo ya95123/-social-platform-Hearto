@@ -1,5 +1,7 @@
 <template>
-  <h1>123</h1>
+  <div id="home">
+    <h1 class="text-center">home</h1>
+  </div>
 </template>
 
 <script>
