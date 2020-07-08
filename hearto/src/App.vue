@@ -24,7 +24,9 @@
       overflow
     >
       <!-- Logo -->
+      <router-link to="/">
       <v-img :aspect-ratio="16/9" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-img>
+      </router-link>
 
       <!-- Router -->
       <!-- TODO 前三個要改圖片-->
