@@ -14,14 +14,30 @@ const routes = [
     }
   },
   {
-    path: '/bless',
-    name: 'Bless',
+    path: '/pray',
+    name: 'Pray',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "bless" */ '../views/Bless.vue'),
+    component: () => import(/* webpackChunkName: "pray" */ '../views/Pray.vue'),
     meta: {
       title: '禱告地｜🙏交心 hearto'
+    }
+  },
+  {
+    path: '/pray/initial',
+    name: 'Initial',
+    component: () => import(/* webpackChunkName: "pray/initial" */ '../views/Initial.vue'),
+    meta: {
+      title: '立即禱告｜🙏交心 hearto'
+    }
+  },
+  {
+    path: '/pray/bless',
+    name: 'Bless',
+    component: () => import(/* webpackChunkName: "pray/bless" */ '../views/Bless.vue'),
+    meta: {
+      title: '祝福禱告｜🙏交心 hearto'
     }
   },
   {

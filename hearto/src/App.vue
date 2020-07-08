@@ -4,7 +4,7 @@
     <v-app-bar id="top"
       :clipped-left="primaryDrawer.clipped"
       :fixed="primaryDrawer.fixed"
-      color="transparent"
+      color="light"
       dense
       elevation="0"
       app
@@ -100,7 +100,8 @@ export default {
       fixed: true
     },
     item1s: [
-      { title: '禱告好棒！', router: '/bless' },
+      // 禱告好棒之後要調回正確路徑，現在先以聊天室路徑為主
+      { title: '禱告好棒！', router: '/pray/initial' },
       { title: '我需要鼓勵！', router: '/encourage' },
       { title: '季活動', router: '/#activity' },
       { title: '小社群', router: '/community' },
