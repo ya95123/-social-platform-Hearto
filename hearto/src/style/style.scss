@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     font-family: '微軟正黑體','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -8,6 +6,7 @@ html,body{
   height: 100%;
 }
 
+/* *app */
 /* *sidebar */
 #sidebar{
   height: 100%;
@@ -20,5 +19,14 @@ html,body{
     bottom: 0%;
     background-color: transparent;
   }
+}
+
+/* *統一靠右 */
+#home,#pray,#initial,#encourage,#community,#exercise,#mood{
+  width: calc(100% - 256px);
+  height: calc(100% - 48px);
+  position: absolute;
+  left: 256px;
+  top: 48px;
 }
 
