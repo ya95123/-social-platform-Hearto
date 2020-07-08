@@ -24,8 +24,8 @@ html, body {
   background-color: transparent;
 }
 
-/* *統一靠右 */
-#home, #pray, #initial, #encourage, #community, #exercise, #mood {
+/* *版面位置統一 */
+#home, #pray, #initial, #bless, #encourage, #community, #exercise, #mood {
   width: calc(100% - 256px);
   height: calc(100% - 48px);
   position: absolute;
