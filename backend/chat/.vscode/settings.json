@@ -1,0 +1,22 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#591c3a",
+    "activityBar.activeBorder": "#4f7926",
+    "activityBar.background": "#591c3a",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#4f7926",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#321021",
+    "statusBar.border": "#321021",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#591c3a",
+    "titleBar.activeBackground": "#321021",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.border": "#321021",
+    "titleBar.inactiveBackground": "#32102199",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#321021",
+  "liveServer.settings.multiRootWorkspaceName": "chat"
+}
