@@ -21,7 +21,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "pray" */ '../views/Pray.vue'),
     meta: {
-      title: '禱告地｜🙏交心 hearto'
+      title: '禱告室｜🙏交心 hearto'
     }
   },
   {
@@ -45,7 +45,7 @@ const routes = [
     name: 'Encourage',
     component: () => import(/* webpackChunkName: "encourage" */ '../views/Encourage.vue'),
     meta: {
-      title: '我需要鼓勵｜💪交心 hearto'
+      title: '喝雞湯｜💪交心 hearto'
     }
   },
   {
@@ -53,7 +53,7 @@ const routes = [
     name: 'Community',
     component: () => import(/* webpackChunkName: "community" */ '../views/Community.vue'),
     meta: {
-      title: '小社群｜🏡交心 hearto'
+      title: '聊社群｜🏡交心 hearto'
     }
   },
   {
@@ -69,7 +69,7 @@ const routes = [
     name: 'Mood',
     component: () => import(/* webpackChunkName: "mood" */ '../views/Mood.vue'),
     meta: {
-      title: '心情紀錄｜📙交心 hearto'
+      title: '心紀錄｜📙交心 hearto'
     }
   }
 ]
