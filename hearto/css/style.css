@@ -15,6 +15,7 @@ html, body {
 
 #sidebar button {
   font-size: 1rem;
+  text-decoration: none;
 }
 
 #sidebar footer {

@@ -14,7 +14,7 @@
 
     <!-- sidebar-------------------------------- -->
     <v-navigation-drawer id="sidebar"
-      class="primary"
+      class="success"
       v-model="primaryDrawer.model"
       :clipped="primaryDrawer.clipped"
       :floating="primaryDrawer.floating"
@@ -36,9 +36,9 @@
           :key="item1.title"
         >
           <v-list-item-content>
-            <router-link :to="item1.router">
-              <v-btn text block color="warning text-left">
-                {{item1.title}}
+            <router-link :to="item1.router" style="text-decoration:none;">
+              <v-btn text block large="" color="accent text-left">
+                <span>{{item1.title}}</span>
               </v-btn>
             </router-link>
           </v-list-item-content>
@@ -80,7 +80,7 @@
 
       <!-- footer -->
       <v-footer class="d-block">
-        <div class="px-4 warning--text text-center overline">交心 Hearto &copy; {{ new Date().getFullYear() }}</div>
+        <div class="px-4 primary--text text-center overline">交心 Hearto &copy; {{ new Date().getFullYear() }}</div>
       </v-footer>
     </v-navigation-drawer>
 
@@ -101,12 +101,12 @@ export default {
     },
     item1s: [
       // 禱告好棒之後要調回正確路徑，現在先以聊天室路徑為主
-      { title: '禱告好棒！', router: '/pray/initial' },
-      { title: '我需要鼓勵！', router: '/encourage' },
+      // { title: '禱告室', router: '/pray/initial' },
+      { title: '喝雞湯', router: '/encourage' },
       { title: '季活動', router: '/#activity' },
-      { title: '小社群', router: '/community' },
+      { title: '聊社群', router: '/community' },
       { title: '揪運動', router: '/exercise' },
-      { title: '心情紀錄', router: '/mood' }
+      { title: '心紀錄', router: '/mood' }
     ]
     // item2s: [
     //   {
