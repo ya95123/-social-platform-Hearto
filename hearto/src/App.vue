@@ -101,7 +101,7 @@ export default {
     },
     item1s: [
       // 禱告好棒之後要調回正確路徑，現在先以聊天室路徑為主
-      // { title: '禱告室', router: '/pray/initial' },
+      { title: '禱告室', router: '/pray/initial' },
       { title: '喝雞湯', router: '/encourage' },
       { title: '季活動', router: '/#activity' },
       { title: '聊社群', router: '/community' },
@@ -119,5 +119,34 @@ export default {
     //   }
     // ]
   })
+  // mounted () {
+  //   // 連結 socket.io
+  //   this.$socket.emit('connect', 1)
+  //   this.$socket.emit('register', '客户端需要帮助了')
+  // },
+  // sockets: {
+  //   connect () {
+  //     console.log('連結成功')
+  //   },
+  //   disconnect () {
+  //     console.log('連結斷開')
+  //   }, // 检测socket断开链接
+  //   reconnect () {
+  //     console.log('重新連結')
+  //   },
+  //   // 客户端接收後台傳輸的socket事件
+  //   message (data) {
+  //     this.$notify({
+  //       title: '新消息',
+  //       message: data,
+  //       type: 'warning',
+  //       duration: 10000
+  //     })
+  //     // 接收的消息
+  //     console.log('data', data)
+  //   }
+  // },
+  // methods: {
+  // }
 }
 </script>
